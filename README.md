@@ -1,16 +1,46 @@
 # TR-PDF-Parser
-Parses invoice PDF files from the german brokerage Trade Republic
 
-# The problem
-To keep track of my investing activities, I manually read the latest invoices and extracted the properties from the latest trades. After a while, I made some mistakes and archived the files with a wrong name convention. That's when I decided to write a script.
+Parses PDF invoices from the brokerage Trade Republic.
 
-# What's it about?
-This python script checks a specified folder for invoices, parses them and moves them to an archive folder.
-While the script is parsing the invoices, it returns all needed properties from that invoice, such as underlying security, amount of shares, market price, ...
+## The problem
 
-# Installation
-- clone the git repo
-- specify the source and destination folders in main.py
-- start the script!
+To keep track of my investing activities, I had to manually extract properties of my trades. After a while, I made some mistakes and archived the files with a wrong naming convention. That's when I decided to write a script.
 
-There won't be any screenshots due to privacy concerns.
+## What does it?
+
+This python script checks a specified folder for invoices, parses them and moves them to a specified folder.
+While the script is parsing the invoices, it returns all needed properties from that invoice, such as underlying security, amount of shares, market price, etc.
+
+
+## Requirements
+- Python 3.7 or larger
+- pipenv
+
+## Installation
+
+Clone this repository
+
+```bash
+git clone git@github.com:MarcBuch/TR-PDF-Parser.git
+```
+
+Edit the source and destination folder inside main.py
+
+```Python
+sourceFolder = '/downloads'
+destinationFolder = '/Wertpapierabrechnungen'
+```
+
+Install the dependencies
+
+```Bash
+pipenv install
+```
+
+Start the script
+
+```Bash
+./start.sh
+```
+
+There are no screenshots due to privacy concerns.
