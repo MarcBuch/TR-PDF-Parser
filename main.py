@@ -36,10 +36,8 @@ def checkDocument(pdf):
     else:
         return False
 
-# sourceFolder = '/Downloads/'
-# destinationFolder = '/Wertpapierabrechnungen/'
-sourceFolder = '/Users/mmbp/SyncThing/BCG PLA Shared Folder/PortfolioPerformance/test/'
-destinationFolder = '/Users/mmbp/SyncThing/BCG PLA Shared Folder/PortfolioPerformance/TR parsed/'
+sourceFolder = '/Downloads/'
+destinationFolder = '/Wertpapierabrechnungen/'
 os.makedirs(destinationFolder + "originals", exist_ok=True)
 
 # entsprechend Portfolio Performance
