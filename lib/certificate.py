@@ -12,9 +12,9 @@ class Certificate(Transaction):
         if 'kapitalertragssteuer' in pdf:
             taxes = 0
             if 'optimierung' in pdf:
-                taxes = self.total - (self.netTotal - self.brokerageFee)
+                taxes = self.total - (self.grossTotal - self.brokerageFee)
             else:
-                taxes = self.total - (self.netTotal - self.brokerageFee)
+                taxes = self.total - (self.grossTotal - self.brokerageFee)
                 # Limit the float to only 2 decimals
             self.taxes = float("{:.2f}".format(taxes))
         else:
