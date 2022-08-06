@@ -7,6 +7,8 @@ verify_ssl = true
 
 [packages]
 "pdfminer.six" = "*"
+numpy = "*"
+pandas = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"
